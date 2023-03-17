@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+  <!--"ic_action_add_24dp" is a Vector Asset file with the "Add" Clip Art style-->
+
+  <!--Step21 Prepare the RecyclerView to display Happy Places-->
+    <androidx.recyclerview.widget.RecyclerView
+     android:id="@+id/rvPlaces"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:visibility="invisible"/>
+
+<!--Step22 Add a note visible only when no HappyPlaces found-->
+  <TextView
+      android:id="@+id/tvNoPlaces"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/note_text_no_places_found"
+      android:textSize="@dimen/no_records_available_text_size"
+      android:visibility="invisible"
+      />
+
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/fabAddHappyPlace"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|end"
+      android:layout_margin="@dimen/fab_margin"
+      app:srcCompat="@drawable/ic_action_add_24dp"
+      />
+
+
+
+</FrameLayout>

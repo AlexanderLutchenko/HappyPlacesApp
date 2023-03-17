@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.HappyPlaces" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/whiteColor</item>
+
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+<!--Create a theme/style to use in each app activity(specified in AndroidManifest.xml)
+as the custom toolbar created below will be used instead of default ActionBar-->
+    <style name="CustomNoActionBarTheme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <!--Create a custom toolbar to use throughout the app, applying it in activity layout files-->
+    <style name="CustomToolbarStyle">
+        <item name="android:textColorPrimary">@color/whiteColor</item>
+        <item name="android:colorControlNormal">@color/whiteColor</item>
+    </style>
+
+<!--Style for rounded image view in item_recycler_view.xml-->
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

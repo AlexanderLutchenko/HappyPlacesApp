@@ -1,0 +1,21 @@
+<resources>
+    <!--String to use in AndroidManifest for application label-->
+    <string name="app_name">Happy Places</string>
+
+    <!--Strings for Add Happy Place Screen-->
+    <string name="editTextHintTitle">Title</string>
+    <string name="editTextHintDescription">Description</string>
+    <string name="editTextHintDate">Date</string>
+    <string name="editTextHintLocation">Location</string>
+    <string name="textAddImage">ADD IMAGE</string>
+    <string name="btnTextSave">SAVE</string>
+
+
+    <string name="note_text_no_places_found">No Happy Places Found.\nPlease add them to display here.</string>
+
+    <!--Value for the button of Happy Place Detail Activity-->
+    <string name="btn_text_view_on_map">View On Map</string>
+
+    <!--Value for Select Current Location button-->
+    <string name="add_place_select_current_location_text">Select Current Location</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main screen Float Action  Button margin-->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--dimens required to design the Add Happy Places Screen-->
+    <dimen name="mainContentPadding">16dp</dimen>
+    <dimen name="editTextTextSize">16sp</dimen>
+    <dimen name="addScreenTilMarginTop">5dp</dimen>
+    <dimen name="addScreenPlaceImageSize">200dp</dimen>
+    <dimen name="addScreenPlaceImageMarginTop">15dp</dimen>
+    <dimen name="addScreenPlaceImagePadding">2dp</dimen>
+    <dimen name="addScreenTextAddImageMarginTop">96dp</dimen>
+    <dimen name="addScreenTextAddImagePadding">10dp</dimen>
+    <dimen name="addScreenTextAddImageTextSize">18sp</dimen>
+    <dimen name="addScreenBtnSaveMarginTop">24dp</dimen>
+    <dimen name="addScreenBtnSavePaddingTopBottom">8dp</dimen>
+    <dimen name="btnTextSize">18sp</dimen>
+    <dimen name="imageBorderStrokeSize">0.5dp</dimen>
+    <dimen name="btnBorderStrokeSize">0.5dp</dimen>
+    <dimen name="addPlaceImageShapeRadius">3dp</dimen>
+    <dimen name="buttonRadius">10dp</dimen>
+
+
+
+    <dimen  name="no_records_available_text_size">16sp</dimen>
+
+    <!--All the dimen values used for designing the Happy Places RecyclerView item-->
+    <dimen name="item_happy_place_cv_main_marginStartEnd">8dp</dimen>
+    <dimen name="item_happy_place_cv_corner_radius">3dp</dimen>
+    <dimen name="item_happy_place_cv_elevation">3dp</dimen>
+    <dimen name="item_happy_places_content_padding">5dp</dimen>
+    <dimen name="item_happy_place_circular_image_size">70dp</dimen>
+    <dimen name="item_happy_place_ll_marginStart">10dp</dimen>
+    <dimen name="item_happy_place_ll_marginEnd">2dp</dimen>
+    <dimen name="item_happy_place_title_textSize">16sp</dimen>
+    <dimen name="item_happy_place_description_textSize">14sp</dimen>
+
+
+    <!--All the dimen values used for designing the view for Happy Places Detail Activity-->
+    <dimen name="detail_screen_image_height_size">250dp</dimen>
+    <dimen name="detail_screen_description_margin">8dp</dimen>
+    <dimen name="detail_screen_description_text_size">16sp</dimen>
+    <dimen name="detail_screen_location_marginStartEnd">8dp</dimen>
+    <dimen name="detail_screen_location_marginTop">16dp</dimen>
+    <dimen name="detail_screen_location_text_size">18sp</dimen>
+
+
+    <!--Dimen values for the button of Happy Place Detail Activity-->
+    <dimen name="detail_screen_btn_view_on_map_marginStartEnd">8dp</dimen>
+    <dimen name="detail_screen_btn_view_on_map_marginTop">16dp</dimen>
+    <dimen name="detail_screen_btn_view_on_map_PaddingTopBottom">8dp</dimen>
+    <dimen name="detail_screen_btn_view_on_map_text_size">18sp</dimen>
+
+    <!--Dimen values for Select Current Location button-->
+    <dimen name="add_place_select_current_location_marginTop">5dp</dimen>
+    <dimen name="add_place_select_current_location_padding">10dp</dimen>
+    <dimen name="add_place_select_current_location_textsize">16sp</dimen>
+
+
+
+</resources>

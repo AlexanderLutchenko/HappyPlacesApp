@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HappyPlaceDetailActivity">
+
+    <!--Step28 Set the HappyPlaceDetailActivity Layout-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPlaceDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/CustomToolbarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <!-- fillViewport below defines whether the scrollview should stretch its content to fill the viewport. -->
+    <!-- ScrollView scrolls the small screen UI items that don't fit there -->
+    <ScrollView
+        android:id="@+id/svPlaceDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarPlaceDetail">
+
+        <!--Use constraint layout inside the ScrollView to place the items-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPlaceDetailImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_screen_image_height_size"
+                android:background="@drawable/shape_image_view_border"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detail_screen_image_placeholder"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPlaceDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/detail_screen_description_margin"
+                android:layout_marginTop="@dimen/detail_screen_description_margin"
+                android:layout_marginEnd="@dimen/detail_screen_description_margin"
+                android:textColor="@color/detail_screen_description_text_color"
+                android:textSize="@dimen/detail_screen_description_text_size"
+                app:layout_constraintTop_toBottomOf="@id/ivPlaceDetailImage"
+                app:layout_constraintBottom_toTopOf="@+id/tvPlaceDetailLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Description"/>
+
+            <TextView
+                android:id="@+id/tvPlaceDetailLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/detail_screen_location_marginStartEnd"
+                android:layout_marginTop="@dimen/detail_screen_location_marginTop"
+                android:layout_marginEnd="@dimen/detail_screen_location_marginStartEnd"
+                android:text="@string/textAddImage"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/detail_screen_location_text_size"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tvPlaceDetailDescription"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Location"/>
+
+            <!--Step53 Create a button to display HappyPlace location on a map-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnViewOnMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/detail_screen_btn_view_on_map_marginStartEnd"
+                android:layout_marginTop="@dimen/detail_screen_btn_view_on_map_marginTop"
+                android:layout_marginEnd="@dimen/detail_screen_btn_view_on_map_marginStartEnd"
+                android:background="@drawable/shape_button_rounded"
+                android:gravity="center"
+                android:paddingTop="@dimen/detail_screen_btn_view_on_map_PaddingTopBottom"
+                android:paddingBottom="@dimen/detail_screen_btn_view_on_map_PaddingTopBottom"
+                android:text="@string/btn_text_view_on_map"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/detail_screen_btn_view_on_map_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPlaceDetailLocation" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
