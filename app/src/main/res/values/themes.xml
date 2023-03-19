@@ -20,14 +20,14 @@
         <!-- Customize your theme here. -->
     </style>
 
-<!--Create a theme/style to use in each app activity(specified in AndroidManifest.xml)
+<!--Step1.6 Create a theme/style to use in each app activity(specified in AndroidManifest.xml)
 as the custom toolbar created below will be used instead of default ActionBar-->
     <style name="CustomNoActionBarTheme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
         <item name="android:colorControlActivated">@color/colorPrimary</item>
     </style>
 
-    <!--Create a custom toolbar to use throughout the app, applying it in activity layout files-->
+    <!--Step1.7 Create a custom toolbar to use throughout the app, applying it in activity layout files-->
     <style name="CustomToolbarStyle">
         <item name="android:textColorPrimary">@color/whiteColor</item>
         <item name="android:colorControlNormal">@color/whiteColor</item>

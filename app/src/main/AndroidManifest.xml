@@ -46,6 +46,7 @@
             android:label="Happy Place Details"
             android:screenOrientation="portrait"
             android:theme="@style/CustomNoActionBarTheme" />
+        <!--Step1.5 Set the new activity design-->
         <activity
             android:name=".activities.AddHappyPlaceActivity"
             android:exported="true"

@@ -9,12 +9,12 @@
     <color name="teal_700">#2a4d69</color>-->
     <color name="black">#FF000000</color>
 
-    <!--Main Theme Colors-->
+    <!--Step1.1 Set Main Theme Colors-->
     <color name="colorPrimary">#4b86b4</color>
     <color name="colorPrimaryDark">#2a4d69</color>
     <color name="colorAccent">#adcbe3</color>
 
-    <!--COLOR values to design the Add Happy Places Screen-->
+    <!--Step1.13 COLOR values to design the Add Happy Places Screen-->
     <color name="primaryTextColor">#212121</color>
     <color name="secondaryTextColor">#9AA2AF</color>
     <color name="whiteColor">#FFFFFF</color>

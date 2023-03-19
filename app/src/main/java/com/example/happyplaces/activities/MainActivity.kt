@@ -1,7 +1,6 @@
 package com.example.happyplaces.activities
 
 import android.R
-
 import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -43,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         //Now binding object can be used to access its layout items, set the contentView with it, etc.
         setContentView(binding.root)
 
-        //Set an action for the floating button "+", start AddHappyPlace activity when pressed
+        //Step1.9 Set an action for the floating button "+", start AddHappyPlace activity when pressed
         binding.fabAddHappyPlace.setOnClickListener{
             val intent = Intent(this, AddHappyPlaceActivity::class.java)
             startActivity(intent)
@@ -104,7 +103,6 @@ class MainActivity : AppCompatActivity() {
                     //adapter must be passed each time the Handler created
                     //to make sure it's not cached and uses the latest updated version
                     val adapter = binding.rvPlaces.adapter as HappyPlacesAdapter
-                    //Ask user for a permission to delete an item with the Alert Dialog
                     val builder = AlertDialog.Builder(this@MainActivity)
                     builder.setIcon(R.drawable.ic_dialog_alert)
                     //Use the custom-made "getTitle" function in HappyPlacesAdapter

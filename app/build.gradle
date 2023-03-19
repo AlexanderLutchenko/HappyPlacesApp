@@ -62,7 +62,7 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
 
-    //material dependency allows to use material designs (FAB "floating action button" for this app)
+    //Step1.2 Add a material dependency that allows to use material designs (FAB "floating action button" for this app)
     implementation 'com.google.android.material:material:1.6.1'
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'

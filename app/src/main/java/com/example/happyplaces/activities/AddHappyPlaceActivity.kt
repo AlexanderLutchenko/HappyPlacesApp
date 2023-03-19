@@ -87,7 +87,7 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
         //Align the xml view to this class (this activity)
         setContentView(binding.root)
 
-        //Step1 Create a custom toolbar bar
+        //Step1.10 Create a custom toolbar bar
         setSupportActionBar(binding.toolbarAddPlace)
         //Create a "back action" button in toolbar
         if (supportActionBar != null) {

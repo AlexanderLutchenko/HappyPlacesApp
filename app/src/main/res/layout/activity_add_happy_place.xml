@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.AddHappyPlaceActivity">
 
+    <!--Step1.8Add a custom toolbar to the activity-->
 <!--"?attr/actionBarSize" below is the default ActionBar height-->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarAddPlace"
@@ -18,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
+    <!--Step1.11 Set the rest of activity layout-->
     <!-- fillViewport below defines whether the scrollview should stretch its content to fill the viewport. -->
     <!--0dp height allows it to take all the available height-->
     <!-- ScrollView scrolls the small screen UI items that don't fit there -->
@@ -88,7 +90,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilDescription">
 
-                <!--"focusable*" below is to disable modifying of the Date box text,
+                <!--Step1.15 "focusable*" below is to disable modification of the Date box text,
                 making it selectable instead of editable,
                 the date-picker code for this is implemented in AddHappyPlaceActivity file -->
                 <androidx.appcompat.widget.AppCompatEditText
@@ -114,7 +116,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilDate">
 
-                <!-- Step46 Add "focusable*" below to disable modifying of the Location box text,
+                <!-- Step46 Add "focusable*" below to disable modification of the Location box text,
                 making it selectable instead of editable,
                 the Google Places API code for this is implemented in AddHappyPlaceActivity file -->
                 <androidx.appcompat.widget.AppCompatEditText
