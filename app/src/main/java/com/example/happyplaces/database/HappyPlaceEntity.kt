@@ -25,6 +25,7 @@ data class HappyPlaceEntity (
     val longitude: Double
     //Step29 Transform the class to the datatype format that can be passed from one class to another
     //It will be required when passing a record of this datatype to intent that opens another activity in HappyPlacesAdapter
+    //Can use "Serializable" interface, but "Parcelable" is much faster, though a bit more complicated to implement
         ):Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),

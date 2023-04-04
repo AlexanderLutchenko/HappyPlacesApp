@@ -1,7 +1,6 @@
 package com.example.happyplaces.activities
 
 import android.Manifest
-import com.example.happyplaces.R
 import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.DatePickerDialog
@@ -10,7 +9,6 @@ import android.content.Context
 import android.content.ContextWrapper
 import android.content.Intent
 import android.graphics.Bitmap
-import android.location.Location
 import android.location.LocationManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -502,8 +500,8 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
 
-    //Step69 Suppress "Missing Permission" warning of fusedLocationClient the following function uses,
-    //as before that function call, Location Permission is successfully checked in Step 63
+    //Step69 Suppress "Missing Permission" warning of fusedLocationClient that the following function uses,
+    //as before that function call, Location Permission is successfully checked in previous Step 63
     @SuppressLint("MissingPermission")
     //Step68 Create function to transform user Location into human-readable address
     private fun requestLocationAddress(){

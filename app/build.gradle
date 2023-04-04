@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
 
-    //Add Kotlin Annotation Processor (k a pt)
+    //Add Kotlin Annotation Processor (k a pt) - Required for Room Database
     id 'kotlin-kapt'
 
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
