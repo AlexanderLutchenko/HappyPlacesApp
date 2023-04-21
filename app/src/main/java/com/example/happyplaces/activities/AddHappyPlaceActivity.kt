@@ -548,12 +548,8 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
     // 6) Copy the created and protected API key at Google Cloud Platform, now paste it into Android Studio project:
         // There are two ways of using the API key in the Android Studio project - open and secure(safe to upload to GitHub and hide the API key)
         // 6.1) For open way: paste it into res/values/google_maps_api.xml "google_maps_key" string value
-            //6.1.a) Now use it as a variable in AndroidManifest.xml file. Meta-data is created with the Google Maps Fragment in earlier step and awaits for the API key:
-                    /*<meta-data
-                    android:name="com.google.android.geo.API_KEY"
-                     android:value="${@string/google_maps_key}" />*/
             //Inside any project activity the API Key can be accessed as a variable:
-            // val apiKey = resources.getString(R.string.google_maps_key) (need to import com.example.happyplaces.R to activity)
+            // val apiKey = resources.getString(R.string.google_maps_key) (need to import com.example.happyplaces.R into activity)
         // 6.2) For secure way:
             // 6.2.a) Add a Secret Gradle Plugin that allows to create and read properties from Gradle's "local.properties" file
             // This file is not checked into GitHub version control system, meaning its content kept on yor local device but its properties can be
@@ -563,11 +559,12 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
             //6.2.c) In your module build.gradle file add a plugin, then synchronise Gradle:
                 //id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
             //6.2.d) In your Gradle local.properties file add
-                //mapsAPIKey=YOUR_API_KEY_VALUE (Insert the real value instead of YOUR_API_KEY_VALUE)
+                //mapsAPIKey=YOUR_API_KEY_VALUE (Insert the real value instead of YOUR_API_KEY_VALUE, no quotes or brackets)
             //6.2.e) Now use it as a variable in AndroidManifest.xml file. Meta-data is created with the Google Maps Fragment in earlier step and awaits for the API key:
                     /*<meta-data
                         android:name="com.google.android.geo.API_KEY"
                          android:value="${mapsAPIKey}" />*/
+            //Start the app to rebuild the BuildConfig.java file with the previously added variable
             //Inside any project activity the API Key can be accessed as a variable:
                 //val apiKey = BuildConfig.mapsAPIKey
     //7) The next step is to create a Billing Account to make the API work
