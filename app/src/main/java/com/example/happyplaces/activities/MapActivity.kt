@@ -24,7 +24,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     private var receivedRecord: HappyPlaceEntity? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //Fill up the binding object with activity_main layout items
+        //Fill up the binding object with activity_map layout items
         binding = ActivityMapBinding.inflate(layoutInflater)
         //Now binding object can be used to access its layout items, set the contentView with it, etc.
         setContentView(binding.root)

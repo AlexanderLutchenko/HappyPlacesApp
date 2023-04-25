@@ -75,12 +75,12 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
 
     //create a global DAO object to access the Database within the entire activity
     private lateinit var happyDAO : HappyPlaceDAO
-    //create a binding object for activity_main.xml layout
+    //create a binding object for current activity layout
     private lateinit var binding: ActivityAddHappyPlaceBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //Fill up the binding object with activity_main.xml layout items
+        //Fill up the binding object with current activity layout items
         binding = ActivityAddHappyPlaceBinding.inflate(layoutInflater)
         //Align the xml view to this class (this activity)
         setContentView(binding.root)

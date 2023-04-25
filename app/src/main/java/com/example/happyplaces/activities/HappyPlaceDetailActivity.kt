@@ -8,7 +8,7 @@ import com.example.happyplaces.database.HappyPlaceEntity
 import com.example.happyplaces.databinding.ActivityHappyPlaceDetailBinding
 
 //Step30 Create an activity to display the record details once its clicked in RecyclerView
-//create a binding object for activity_main.xml layout
+//create a binding object for current activity layout
 private lateinit var binding: ActivityHappyPlaceDetailBinding
 //prepare the global variable to receive a HappyPlace record details from another activity
 private var receivedRecord: HappyPlaceEntity? = null
